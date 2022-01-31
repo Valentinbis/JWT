@@ -1,0 +1,18 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if (user) { %>
+        <li><a href="/logout">Log out</a></li>
+      <% } else { %>
+        <li><a href="/session">Log in</a></li>
+        <li><a href="/signup" class="btn">Sign up</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  
